@@ -6,7 +6,7 @@
 🎉 Phần giải thích cực kì đơn giản về design patterns! 🎉
 </p>
 <p align="center">
-Đây là một chủ đề có thể khiến tâm trí của bất kì ai lay động rất dễ dàng. Ở đây tôi sẽ cố gắng giúp bạn nhớ nó thật lâu (và có thể là cả tôi nữa) bằng cách giải thích chúng bằng những cách <i>đơn giản nhất</i> có thể.
+Một chủ đề có thể dễ dàng làm cho tâm trí của bất cứ ai lay động.Ở đây tôi cố gắng làm cho chúng in sâu vào tâm trí bạn  (và có thể là cả tôi nữa) bằng cách giải thích chúng bằng những cách <i>đơn giản nhất</i> có thể.
 </p>
 
 ***
@@ -219,7 +219,7 @@ $marketingManager->takeInterview(); // Output: Asking about community building.
 
 **Sử dụng khi nào?**
 
-Nó hữu dụng khi có một số việc được sử lý chung trong một class nhưng các class con được yêu cầu có thể được đưa ra bởi các quyết định linh động trong khi chạy. Hay nói cách khác, khi client không biết chính xác class con nào là cần thiết.
+Nó hữu dụng khi có một số việc được xử lý chung trong một class nhưng các class con được yêu cầu có thể được đưa ra bởi các quyết định linh động trong khi chạy. Hay nói cách khác, khi client không biết chính xác class con nào là cần thiết.
 
 🔨 Abstract Factory
 ----------------
@@ -231,7 +231,7 @@ Nói một cách ngắn gọn
 > một factory của các factory; một factory nhóm những cá thể nhưng các factory liên kết/phụ thuộc lẫn nhau mà không cần chỉ rõ các class cụ thể của nó.
 
 Wikipedia định nghĩa là 
-> abstract factory pattern cung cấp một cách để đóng gói một nhóm những cá thể factory có cùng một chủ đề mà không cần kai báo class cụ thể của chúng.
+> abstract factory pattern cung cấp một cách để đóng gói một nhóm những cá thể factory có cùng một chủ đề mà không cần khai báo class cụ thể của chúng.
 
 **Ví dụ trong lập trình**
 
@@ -354,7 +354,7 @@ Khi có sự tương quan giữa phụ thuộc và các logic khởi tạo liên
 --------------------------------------------
 Ví dụ thực tế
 
-> Hãy tưởng tượng là bạn đang ở Hardee's và bạn đặt một đơn hàng đặc biệt, hãy nói "Big hardee" và họ đưa cho bạn mà không có *bất kì câu hỏi nào*; đây là một ví dụ về simple factory.  Nhưng đâu là những trường hợp khi logic khởi tạo liên quan tới nhiều bước. Ví dụ như bạn muốn tùy chỉnh đơn Subway, bạn có nhiều lựa chọn trong việc chiếc burger của bjan được làm như nào như bạn đang muốn bánh mì gì? loại sốt mà bạn muốn?... Trong những trường hợp như vậy, builder pattern được sử dụng như một giải pháp.
+> Hãy tưởng tượng là bạn đang ở Hardee's và bạn đặt một đơn hàng đặc biệt, hãy nói "Big hardee" và họ đưa cho bạn mà không có *bất kì câu hỏi nào*; đây là một ví dụ về simple factory.  Nhưng đâu là những trường hợp khi logic khởi tạo liên quan tới nhiều bước. Ví dụ như bạn muốn tùy chỉnh đơn Subway, bạn có nhiều lựa chọn trong việc chiếc burger của bjan được làm như nào như bạn đang muốn bánh mì gì? loại sốt mà bạn muốn?bạn thích loại phô mai nào?... Trong những trường hợp như vậy, builder pattern được sử dụng như một giải pháp.
 
 Nói một cách ngắn gọn
 > Cho phép bạn bạn tạo các đặc điểm khác nhau của object trong khi tránh bị ảnh hưởng việc khởi tạo. Nó hữu dụng khi có thể tạo nhiều tùy chọn cho một object. Hoặc khi có quá nhiều bước trong việc tạo ra một object.
@@ -468,9 +468,9 @@ Nói một cách ngắn gọn
 > Việc tạo object dựa trên một object đã tồn tại thông qua việc nhân bản.
 
 Wikipedia định nghĩa là:
-> Prototype pattern là một creational design pattern trong phát triển phần mềm. Nó được sử dụng khi kiểu của object cần tạo được định nghĩa bởi một thực thể nguyên mẫu, giống nhwu việc nhân bản nó để tạo ra một object mới.
+> Prototype pattern là một creational design pattern trong phát triển phần mềm. Nó được sử dụng khi kiểu của object cần tạo được định nghĩa bởi một thực thể nguyên mẫu, giống như việc nhân bản nó để tạo ra một object mới.
 
-Nói ngắn gọn, nó cho phép bạn tạo một bản sao chpes một object đã tồn tại và sửa đổi nó theo nhu cầu của bạn thay vì trải qua các sự cố khi tạo một object từ đầu và thiết lập lại nó.
+Nói ngắn gọn, nó cho phép bạn tạo một bản sao chép một object đã tồn tại và sửa đổi nó theo nhu cầu của bạn thay vì trải qua các sự cố khi tạo một object từ đầu và thiết lập lại nó.
 
 **Ví dụ trong lập trình**
 
