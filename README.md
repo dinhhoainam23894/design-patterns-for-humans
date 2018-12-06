@@ -575,7 +575,7 @@ Nói đơn giản
 > Structural patterns chủ yếu liên quan đến thành phần của đối tượng hay nói cách khác là cách các thực thể sử dụng lẫn nhau. Hoặc một lời giải thích khác là, chúng giúp trả lời "Làm thế nào để xây dựng một thành phần của phần mềm ?"
 
 Wikipedia nói
-> Trong sản xuất phần mền, Structural patterns là các mẫu thiết kế làm thiết kết dễ dàng hơn bằng cách xác định một cách đơn giản để nhận ra mối quan hệ giữa các thực thể.
+> Trong sản xuất phần mềm, Structural patterns là các mẫu thiết kế làm thiết kế dễ dàng hơn bằng cách xác định một cách đơn giản để nhận ra mối quan hệ giữa các thực thể.
  * [Adapter](#-adapter)
  * [Bridge](#-bridge)
  * [Composite](#-composite)
@@ -913,7 +913,7 @@ Nói đơn giản
 > Decorator pattern cho phép bạn tự động thay đổi hành vi của một đối tượng trong thời gian chạy bằng cách gói chúng trong một đối tượng của một decorator class.
 
 Wikipedia nói
->  Trong lập trình hướng đối tượng, decorator pattern là một design pattern mà cho phép  hành vi được thêm vào một đối tượng riêng lẻ, tĩnh hoặc động, mà không ảnh hưởng đến hành vi của các đối tượng khác từ cùng một class. Decorator pattern thường hữu ích cho the Single Responsibility Principle, vì nó cho phép chức năng được phân chia giữa các lớp với các lĩnh vực quan tâm duy nhất.
+>  Trong lập trình hướng đối tượng, decorator pattern là một design pattern mà cho phép  hành vi được thêm vào một đối tượng riêng lẻ, tĩnh hoặc động, mà không ảnh hưởng đến hành vi của các đối tượng khác từ cùng một class. Decorator pattern thường hữu ích cho Single Responsibility Principle, vì nó cho phép chức năng được phân chia giữa các lớp với các lĩnh vực quan tâm duy nhất.
 
 
 **Ví dụ**
@@ -1268,7 +1268,7 @@ $door->open('invalid'); // Big no! It ain't possible.
 $door->open('$ecr@t'); // Opening lab door
 $door->close(); // Closing lab door
 ```
-Yet another example would be some sort of data-mapper implementation. For example, I recently made an ODM (Object Data Mapper) for MongoDB using this pattern where I wrote a proxy around mongo classes while utilizing the magic method `__call()`. All the method calls were proxied to the original mongo class and result retrieved was returned as it is but in case of `find` or `findOne` data was mapped to the required class objects and the object was returned instead of `Cursor`.
+Tuy nhiên, một ví dụ khác sẽ là một số loại triển khai data-mapper. Ví dụ, gần đây tôi đã thực hiện một ODM (Object Data Mapper) cho MongoDB bằng cách sử dụng mẫu này, nơi tôi đã viết một proxy xung quanh các lớp mongo trong khi sử dụng phương thức ma thuật __call (). Tất cả các lời gọi phương thức đã được ủy nhiệm cho lớp mongo ban đầu và kết quả được truy xuất được trả về vì nó là nhưng trong trường hợp find hoặc dữ liệu findOne được ánh xạ tới các đối tượng lớp được yêu cầu và đối tượng được trả về thay cho Cursor.
 
 Behavioral Design Patterns
 ==========================
